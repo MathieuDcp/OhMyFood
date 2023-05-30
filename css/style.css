@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Shrikhand&display=swap");
+.bold {
+  font-weight: bold;
+}
+.titre-principal {
+  font-size: 40px;
+}
+.pose {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.gris {
+  color: dimgray;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  z-index: 1;
+  background: #353535;
+  overflow: hidden;
+  font: 5vw/100vh "Shrikhand";
+  font-size: 4rem;
+  text-align: center;
+  color: #9356dc;
+  backface-visibility: hidden;
+  animation: stop-loader 0.5s 3s forwards;
+  transform-origin: top right;
+}
+
+@keyframes stop-loader {
+  to {
+    transform: scale(0);
+  }
+}
+header {
+  box-shadow: 0 5px 10px lightgrey;
+}
+header h1 {
+  display: flex;
+  font-family: "Shrikhand", cursive;
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 1rem 0rem;
+  justify-content: center;
+  text-align: center;
+}
+.fa-location-dot {
+  margin-left: 5rem;
+}
+.bar-de-recherche {
+  text-align: center;
+  background-color: #d2d2d2;
+}
+.bar {
+  width: 100%;
+  background-color: #d2d2d2;
+}
+.search-bar {
+  margin-top: 1px;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+  align-items: center;
+  background-color: #d2d2d2;
+}
+.search-bar input {
+  border: none;
+  font-size: 1.1rem;
+  width: 200px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  background-color: #d2d2d2;
+}
+.search-bar input:focus {
+  outline-color: darkgray;
+}
+.bouton-explorer .sous-titre {
+  margin-bottom: 3rem;
+  font-size: 18px;
+}
+.bouton-explorer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #eaeaea;
+}
+.bouton-explorer label {
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  background: linear-gradient(#ff79da , #9356dc );
+  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 3px 10px darkgray;
+  transition: 100ms;
+}
+.bouton-explorer label:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+.bouton-explorer p {
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  flex-basis: 100%;
+}
+.menu-de-fonctionnement {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.menu-de-fonctionnement h2 {
+  display: flex;
+  justify-content: start;
+  margin: 1rem 0 2rem 5.1rem;
+  margin-top: 3rem;
+}
+.menu-de-fonctionnement ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 3rem;
+}
+.menu-de-fonctionnement ol li {
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  box-shadow: 0 3px 5px darkgray;
+  transition: transform 1s;
+  font-size: 1.1rem;
+  padding: 1.5rem 0;
+  width: 340px;
+}
+.menu-de-fonctionnement ol li i {
+  margin-right: 0.5rem;
+}
+.menu-de-fonctionnement ol li span {
+  position: relative;
+  left: -1rem;
+  border: 1px solid #9356dc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: #9356dc;
+  color: white;
+}
+.menu-de-fonctionnement ol li span:hover {
+  cursor: pointer;
+}
+.menu-de-fonctionnement ol li:hover {
+  cursor: pointer;
+  background-color: #f5edff;
+  transition: 0.5s;
+  transform: scale(1.02);
+}
+.menu-de-fonctionnement ol li:hover i {
+  color: #9356dc;
+}
+.container-gris {
+  background-color: #f6f6f6;
+  padding-top: 10px;
+  margin-top: 3rem;
+  display: flex;
+}
+.resto {
+  display: flex;
+  width: 100%;
+  margin-left: 5rem;
+}
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 4rem;
+  background-color: #f6f6f6;
+  gap: 3rem;
+  margin-top: -2rem;
+}
+.restaurants h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 100px 0 0 1rem;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 3px 8px darkgray;
+  height: 270px;
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 200px;
+  max-height: 200px;
+  border-radius: 1rem 1rem 0 0;
+}
+.card-titre {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+.card-txt {
+  width: 85%;
+}
+.card-txt h3,
+.card-txt p {
+  margin: 0;
+  padding: 0.3rem 0 0 1rem;
+}
+.card-coeur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 30px;
+}
+@keyframes coeur-effet {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fa-solid.fa-heart {
+  display: none;
+}
+.card-coeur:hover {
+  cursor: pointer;
+  opacity: 0;
+  background: linear-gradient(#9356dc 20%, #ff79da 100%);
+  animation: coeur-effet 2.5s ease;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-coeur:hover .fa-regular.fa-heart {
+  display: none;
+}
+.card-coeur:hover .fa-solid.fa-heart {
+  display: inline;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+.card:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+.restaurants span {
+  position: absolute;
+  content: "";
+  right: 10px;
+  padding: 0.5rem;
+  top: 20px;
+  font-weight: bold;
+  background-color: #99e2d0;
+  color: #2faf94;
+  width: 65px;
+}
+.restaurants h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  margin: 0 0 0 1rem;
+  width: 100%;
+}
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1rem 0 1rem 1rem;
+}
+footer h1 {
+  display: flex;
+  justify-content: end;
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+footer i {
+  padding-right: 8px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.logo-text {
+  display: flex;
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: -5px;
+}
+
+/*********** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .menu-de-fonctionnement {
+    flex-direction: column;
+  }
+}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  header {
+    font-size: 3rem;
+  }
+  .menu-de-fonctionnement h2 {
+    display: flex;
+    justify-content: start;
+    margin: 2rem 0 0 1rem;
+  }
+  .menu-de-fonctionnement #choix-menu {
+    padding: 0;
+    padding-left: 20px;
+  }
+  .menu-de-fonctionnement ol li {
+    white-space: nowrap;
+  }
+  .resto {
+    margin-left: 15px;
+  }
+  .restaurants {
+    display: flex;
+    gap: 1rem;
+  }
+  .restaurants h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 0 0 1rem;
+  }
+  .restaurants .card {
+    display: flex;
+    flex-basis: 100%;
+    min-width: 300px;
+    margin: 1rem 1rem 0 1rem;
+  }
+  .footer .logo-text {
+    display: flex;
+    position: relative;
+    top: -180px;
+  }
+  footer h1,
+  .footer {
+    display: block;
+    margin-top: 3rem;
+  }
+  .fa-solid.fa-utensils {
+    margin-right: 6px;
+  }
+  body main footer {
+    padding-left: 2rem;
+  }
+}
